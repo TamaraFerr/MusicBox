@@ -6,20 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
     <title>MusicBox</title>
 </head>
 <body>
     <header>
-        <h1>DrivenEats</h1>
-        <p class="subtitulo">Sua comida em 6 minutos</p>
+        <h1>Welcome to MusicBox!!</h1>
+        <p>Here, you can manage your own musics</p>
     </header>
 
     <main>
+        <div class="content">
+            <button class="button" id="create_button">Create</button>
+            <button class="button" id="join_button">Join</button>
+        </div>
     </main>
 
-    <footer>
-        <button type="button" id="botao-pedido" disabled class="botao" data-test="order-btn" onclick="mandaPedido()">Selecione os 3 itens <br> para fechar o pedido</button>
-    </footer>  
+    <div id="modal_create" class="modal_container">
+        <div class="modal_create">
+            <p>Nome</p>
+            <input type="text" />
+            <span class="material-symbols-outlined">arrow_forward</span>
+            <span class="material-symbols-outlined" id="close">close</span>
+        </div>
+    </div>
+
+    <div id="modal_join" class="modal_container">
+        <div class="modal_join">
+            <p>Codigo</p>
+            <input type="text"/>
+            <span class="material-symbols-outlined">search</span>
+            <span class="material-symbols-outlined" id="close">close</span>
+        </div>
+    </div>
 
     <script src="./js/script.js"></script>
 </body>
