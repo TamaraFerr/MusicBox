@@ -57,39 +57,62 @@ p {
 }
 
 .modal_container {
-    display: flex;
+    box-sizing: border-box;
+    display: none;
     align-items: center;
     justify-content: center;
-    background-color: rgb(o, o, o, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
     pointer-events: none;
+    z-index: 10;
 }
 
 .modal_container.show {
+    display: flex;
     pointer-events: auto;
     opacity: 1;
 }
 
 .modal_join {
+    box-sizing: border-box;
     width: 600px;
     max-width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .modal_create {
+    box-sizing: border-box;
     width: 600px;
     max-width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.modal_header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_header p {
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+.modal_header span {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-right: 10px;
+    cursor: pointer;
 }

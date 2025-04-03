@@ -9,9 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>MusicBox</title>
 </head>
 <body>
@@ -29,19 +27,23 @@
 
     <div id="modal_create" class="modal_container">
         <div class="modal_create">
-            <p>Nome</p>
-            <input type="text" />
-            <span class="material-symbols-outlined">arrow_forward</span>
-            <span class="material-symbols-outlined" id="close">close</span>
+            <header class="modal_header">
+                <p>A name</p>
+                <span class="material-symbols-outlined" id="close_modal_create">close</span>
+            </header>
+            <input type="text"/>
+            <span class="material-symbols-outlined">arrow_right_alt</span>
         </div>
     </div>
 
     <div id="modal_join" class="modal_container">
         <div class="modal_join">
-            <p>Codigo</p>
+            <header class="modal_header">
+                <p>Your code</p>
+                <span class="material-symbols-outlined" id="close_modal_join">close</span>
+            </header>
             <input type="text"/>
             <span class="material-symbols-outlined">search</span>
-            <span class="material-symbols-outlined" id="close">close</span>
         </div>
     </div>
 
