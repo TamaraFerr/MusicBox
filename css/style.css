@@ -79,18 +79,18 @@ p {
 
 .modal_join {
     box-sizing: border-box;
-    width: 600px;
+    width: 400px;
     max-width: 100%;
-    height: 400px;
-    background-color: rgba(255, 255, 255, 0.9);
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.932);
 }
 
 .modal_create {
     box-sizing: border-box;
-    width: 600px;
+    width: 400px;
     max-width: 100%;
-    height: 400px;
-    background-color: rgba(255, 255, 255, 0.9);
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.932);
 }
 
 
@@ -105,7 +105,7 @@ p {
 .modal_header p {
     font-size: 30px;
     font-weight: 600;
-    padding-left: 150px;
+    padding-left: 100px;
     padding-top: 30px;
 }
 
@@ -115,4 +115,184 @@ p {
     padding-top: 10px;
     padding-right: 10px;
     cursor: pointer;
+}
+
+.input-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.input-icon span {
+    font-size: 40px;
+    margin-left: 15px;
+    color: #363636;
+}
+
+.input-icon input {
+    width: 200px;
+    height: 20px;
+}
+
+.box_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.music_list {
+    width: 250px;
+    height: auto;
+    background-color: 	#BDB76B;
+    border-radius: 50px;
+    border: 5px solid #808000;
+    box-sizing: border-box;
+}
+
+.music_list p {
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 35px;
+}
+
+.list {
+    width: 100%;
+    height: auto;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.music img {
+    width: 50px;
+    height: 50px;
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptions h1 {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.descriptions p {
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+    color: #363636;
+}
+
+.music_link {
+    width: 500px;
+    height: 400px;
+    background-color: #F0E68C;
+    border-radius: 60px;
+    border: 5px solid #FF8C00;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.link h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.link span {
+    font-size: 100px;
+    color: #DAA520;
+    margin-top: 50px;
+}
+
+.chat_box {
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    background-color: #E9967A;
+    border-radius: 50px;
+    border: 5px solid #F08080;
+    box-sizing: border-box;
+}
+
+.chat-list {
+    padding-right: 5px;
+    height: 400px;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+
+.default-scroll::-webkit-scrollbar-thumb {
+      background-color: #C1C1C1;;
+      border-radius: 9px;
+}
+
+.default-scroll::-webkit-scrollbar-thumb:hover {
+      background: #979899;;
+}
+  
+.default-scroll::-webkit-scrollbar {
+      width: 9px;
+      height: 9px;
+}
+  
+.default-scroll::-webkit-scrollbar-track {
+      border-radius: 9px;
+      background: #E6E6E6;
+}
+
+.chat {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.chat p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.chat span {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.input_bar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input_bar input {
+    width: 160px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #CD5C5C;
+    padding-left: 10px;
+}
+
+.input_bar :focus {
+    outline: none;
+    border: 3px solid #800000;
+}
+
+.input_bar span {
+    padding-left: 10px;
 }
